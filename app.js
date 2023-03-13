@@ -6,16 +6,11 @@ console.log("EXERCISE 1:\n==========\n");
 function printOdds(count){
     count = prompt("pick a number");
     if (count < 0){
-        for (let i = 1; i >= count; i--){
-            if (i % 2 != 0){
-                console.log(i);
-            }
-        }
-    }else{
-        for (let i = 1; i <= count; i++){
-            if (i % 2 != 0){
-                console.log(i);
-            }
+        count = count * -1;
+    }
+    for (let i = 1; i <= count; i++){
+        if (i % 2 != 0){
+            console.log(i);
         }
     }
 }
